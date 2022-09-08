@@ -10,7 +10,7 @@
   <body>
     <!-- Top Nav including logo, account, and logout (grid 1 r 2 c) -->
     <div class="container">
-      <nav class="row">
+      <nav class="row my-4">
         <div id="logo" class="col">
           <img style="width: 150px" src="images/logo-airbnb.png" />
         </div>
@@ -32,12 +32,73 @@
       <div id="filters" class="container">
         <form>
           <div class="row bg-light">
-            <div class="col">Icon, Text Location</div>
-            <div class="col">Icon, Number of Rooms</div>
-            <div class="col">Icon,Number Max Price</div>
-            <div class="col">Icon,Select Price low-high</div>
-            <div class="col">Icon, Text Specific House Name</div>
-            <div class="col">Icon, Button Search</div>
+            <!-- Filter Input 1 -->
+            <div class="col">
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01"
+                  >A</label
+                >
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>Any</option>
+                  <option value="1">Koh Samui</option>
+                  <option value="2">Koh Phangan</option>
+                  <option value="3">Bali</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Filter Input 2 -->
+            <div class="col">
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01"
+                  >B</label
+                >
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>Any Rooms</option>
+                  <option value="1">1 room</option>
+                  <option value="2">2 rooms</option>
+                  <option value="3">3 rooms</option>
+                  <option value="2">4 rooms</option>
+                  <option value="3">5 rooms</option>
+                </select>
+              </div>
+            </div>
+            <!-- Filter Input 3 -->
+            <div class="col">
+              <div class="input-group mb-3">
+                <span class="input-group-text">$</span>
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="Max Price"
+                  min="100"
+                  max="100000"
+                />
+              </div>
+            </div>
+            <!-- Filter Input 4 -->
+            <div class="col">
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01"
+                  >D</label
+                >
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>Price: Low to High</option>
+                  <option value="1">Price: High to Low</option>
+                </select>
+              </div>
+            </div>
+            <!-- Filter Input 5 -->
+            <div class="col">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">E</span>
+                <input type="text" class="form-control" placeholder="House" />
+              </div>
+            </div>
+            <!-- Filter Button -->
+            <div class="col">
+              <button class="btn btn-success">Search</button>
+            </div>
           </div>
         </form>
       </div>
