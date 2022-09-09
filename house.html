@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="/styles/bootstrap.css" />
+    <script
+      src="https://kit.fontawesome.com/7d676e853f.js"
+      crossorigin="anonymous"
+    ></script>
     <title>House Name</title>
   </head>
   <body>
-    <div class="container">
+    <div class="px-5 my-3">
       <!-- The top nav bar with logo, account, and login/out -->
-      <nav class="row my-3">
-        <div id="logo" class="col pl-5">
+      <nav class="row">
+        <div id="logo" class="col">
           <img style="width: 150px" src="images/logo-airbnb.png" />
         </div>
         <div id="account-info" class="container col text-end">
@@ -97,21 +101,38 @@
       </section>
       <!-- End photos below nav -->
       <!-- Begin description and reviews section below photos  -->
-      <section class="row m-2">
+      <section class="row m-5">
         <!-- Left Column  -->
         <div class="col-7">
-          <!-- description and reviews here -->
-          <h2>Luxury Villa in Chaweng</h2>
+          <!-- description here -->
+          <h2>Listing Title</h2>
           <div class="row">
-            <small class="col-2">Koh Samui 4 Rooms</small>
+            <small class="col-2">Koh Samui &bull; 4 Rooms</small>
           </div>
           <div class="row my-3">
             <div class="col">
-              <div>
+              <div class="row my-2">
                 <img
-                  style="border-radius: 100%; width: 15px"
+                  class="col-1"
+                  style="border-radius: 100%; width: 80px"
                   src="https://randomuser.me/api/portraits/men/11.jpg"
                 />
+                <div class="col-10 p-0">
+                  <span>Hosted By</span>
+                  <div>User Name</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col my-2">
+                  Stylish, tropical, luxurious, airy and absolute stunning view
+                  over the bay of Chaweng Beach, this villa combines form and
+                  function, enjoying magnificent views of Samui's small islands
+                  and the sea beyond. With 520sqm of indoor/outdoor living space
+                  with 7 ensuite bedrooms, large living area, infinity pool,
+                  garden, air conditioned gym, professional pool table, bbq and
+                  Sala, this villa is perfect for up to 14 adults With 260sqm
+                  (2798sqfeet) of living space and 260sqm of outdoor space.
+                </div>
               </div>
             </div>
           </div>
@@ -119,12 +140,12 @@
         <div class="col-4 offset-1">
           <!-- price + request booking here  -->
           <form class="align-right">
-            <div class="card shadow bg-body rounded" style="width: 22rem">
+            <div class="card shadow bg-body rounded" style="width: 25rem">
               <div class="card-body">
-                <h5 class="card-title">$350/night</h5>
+                <h3 class="card-title">$350/night</h3>
                 <small>0 Reviews</small>
                 <textarea
-                  class="form-control"
+                  class="form-control mt-3"
                   rows="6"
                   placeholder="Send the host a message..."
                 ></textarea>
@@ -132,6 +153,20 @@
               </div>
             </div>
           </form>
+        </div>
+      </section>
+      <!-- End description, begin reviews section  -->
+      <section class="row m-5">
+        <div class="col-7 row">
+          <h2>0 Reviews</h2>
+          <span>Leave a review</span>
+          <textarea class="form-control mt-3" rows="6"></textarea>
+          <!-- Two icons and a button -->
+          <div class="p-0 my-2">
+            <i class="fa-solid fa-thumbs-up btn btn-outline-success"></i>
+            <i class="fa-solid fa-thumbs-down btn btn-outline-secondary"></i>
+          </div>
+          <div class="btn btn-success" style="width: 10%">Submit</div>
         </div>
       </section>
     </div>
