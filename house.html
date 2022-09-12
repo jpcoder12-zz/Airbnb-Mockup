@@ -103,18 +103,18 @@
       <!-- Begin description and reviews section below photos  -->
       <section class="row m-5">
         <!-- Left Column  -->
-        <div class="col-7">
+        <div class="col-7 p-0">
           <!-- description here -->
-          <h2>Listing Title</h2>
-          <div class="row">
-            <small class="col">Koh Samui &bull; 4 Rooms</small>
+          <div class="row p-0">
+            <h2 class="row">Listing Title</h2>
+            <small class="row">Koh Samui &bull; 4 Rooms</small>
           </div>
           <div class="row my-3">
-            <div class="col">
+            <div class="col p-0">
               <div class="row my-2">
                 <img
                   class="col-1"
-                  style="border-radius: 100%; width: 80px"
+                  style="border-radius: 100%; width: 8%"
                   src="https://randomuser.me/api/portraits/men/11.jpg"
                 />
                 <div class="col-10 p-0">
@@ -144,6 +144,7 @@
               <div class="card-body">
                 <h3 class="card-title">$350/night</h3>
                 <small>0 Reviews</small>
+                <!--says 2 reviews with thumbs up when in alternate ver-->
                 <textarea
                   class="form-control mt-3"
                   rows="6"
@@ -155,18 +156,48 @@
           </form>
         </div>
       </section>
-      <!-- End description, begin reviews section  -->
-      <section class="row m-5">
-        <div class="col-7 row">
-          <h2>0 Reviews</h2>
-          <span>Leave a review</span>
+      <!-- End description, begin reviews section (comment out either of the two sxns below for the variations) -->
+      <!-- <section class="row m-5">
+        <div class="col-7 row p-0">
+          <h2 class="p-0">0 Reviews</h2>
+          <span class="p-0">Leave a review</span>
           <textarea class="form-control mt-3" rows="6"></textarea>
-          <!-- Two icons and a button -->
-          <div class="p-0 my-2">
+
+          <div class="my-2 p-0">
             <i class="fa-solid fa-thumbs-up btn btn-outline-success"></i>
             <i class="fa-solid fa-thumbs-down btn btn-outline-secondary"></i>
           </div>
           <div class="btn btn-success" style="width: 10%">Submit</div>
+        </div>
+      </section> -->
+      <!-- Alternate variation with reviews below -->
+      <section class="row m-5">
+        <div class="col-7 row p-0">
+          <h2 class="p-0">2 Reviews</h2>
+          <span class="p-0">Leave a review</span>
+          <textarea class="form-control mt-3" rows="6"></textarea>
+          <div class="my-2 p-0">
+            <i class="fa-solid fa-thumbs-up btn btn-outline-success"></i>
+            <i class="fa-solid fa-thumbs-down btn btn-outline-secondary"></i>
+          </div>
+          <div class="btn btn-success" style="width: 10%">Submit</div>
+        </div>
+        <div class="col-7 row mt-5 p-0">
+          <div class="row p-0 card">
+            <div class="row mt-2">
+              <img
+                class="col-2"
+                style="border-radius: 100%; width: 9%"
+                src="https://randomuser.me/api/portraits/men/11.jpg"
+              />
+              <div class="col-4">
+                <small>02 Jan 2022 - 01:01</small>
+                <h6>Peter Lewis</h6>
+              </div>
+              <div class="col-6 text-end">icon</div>
+            </div>
+          </div>
+          <div class="row">Review 2</div>
         </div>
       </section>
     </div>
